@@ -3227,7 +3227,7 @@ checksum = "4d5d9eb14b174ee9aa2ef96dc2b94637a2d4b6e7cb873c7e171f0c20c6cf3eac"
 [[package]]
 name = "otp"
 version = "1.0.0"
-source = "git+https://github.com/TimDumol/rust-otp#dd96dee878012ab7a9969e75b4427607ca4e7f6f"
+source = "git+https://github.com/TimDumol/rust-otp#f4b171e41376703488290ceb65f5812ef2bb85f1"
 dependencies = [
  "ascii",
  "data-encoding",
