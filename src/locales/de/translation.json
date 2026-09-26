@@ -56,7 +56,7 @@
     "theme": "Farbschema",
     "selectTheme": "Farbschema auswählen",
     "themes": {
-      "system": "System",
+      "system": "Systemstandard",
       "light": "Hell",
       "dark": "Dunkel",
       "black": "Schwarz"

@@ -56,7 +56,7 @@
     "theme": "Tema",
     "selectTheme": "Seleccionar tema",
     "themes": {
-      "system": "Sistema",
+      "system": "Predeterminado del sistema",
       "light": "Claro",
       "dark": "Oscuro",
       "black": "Negro"

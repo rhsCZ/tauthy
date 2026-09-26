@@ -27,7 +27,7 @@ const PageTitle = styled(Typography)`
 `
 
 const Search = styled(InputBase)`
-  color: #ffffff;
+  color: inherit;
 `
 
 const AppBar = () => {

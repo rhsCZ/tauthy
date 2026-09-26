@@ -22,14 +22,15 @@ export default {
         darker: '#053e85',
       },
       secondary: {
-        main: primary,
+        main: platform === 'macos' ? '#ffffff' : primary,
+        ...(platform === 'macos' ? { contrastText: grey[900] } : {}),
       },
       neutral: {
         main: '#64748B',
         contrastText: '#ffffff',
       },
       background: {
-        default: '#232629',
+        default: platform === 'macos' ? '#ffffff' : '#232629',
         paper: '#ffffff',
       },
       text: {

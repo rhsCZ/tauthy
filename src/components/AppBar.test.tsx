@@ -53,6 +53,15 @@ describe('AppBar actions', () => {
     expect(screen.getByText('Settings page')).toBeInTheDocument()
   })
 
+  it('inherits the header color instead of forcing white search text', () => {
+    renderAppBar()
+    fireEvent.click(screen.getByRole('button', { name: 'filter entries' }))
+
+    const input = screen.getByPlaceholderText('Search')
+    const searchStyle = getComputedStyle(input.parentElement!)
+    expect(searchStyle.color).toBe(getComputedStyle(screen.getByRole('banner')).color)
+  })
+
   it('shows a dedicated lock button for password-protected vaults', async () => {
     window.localStorage.setItem('isPasswordSet', 'true')
     renderAppBar()
